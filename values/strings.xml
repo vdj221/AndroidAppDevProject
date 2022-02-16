@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RoseLaundryTracker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_settings">settings</string>
+    <string name="polyester_dry_instructions">First, remove your clothes from the washer, and place them in the dryer after turning them inside out. Second, insert a dryer sheet to protect against static discharge. Third, select your heat level depending on your load and delicacy of items. Fourth, clean the lint trap before starting; this will protect your clothes. Finally, press start after closing the door.</string>
+    <string name="cotton_drying_instructions">First, remove your clothes from the washer and place them in the dryer. Second, insert a dryer sheet to protect against static discharge. Third, set the heat to high. Fourth, clean out the lint trap to prevent a lint fire. Finally, press start after closing the door to the dryer.</string>
+    <string name="cotton_washing_instructions">First, sort your clothes by color brightness, doing loads of white, lightly-colored, and darkly-colored loads. Then, evaluate the soil level of the load in question, and set the washer accordingly. After that, set the water temperature according to whether the load is white (hot), light-colored (warm), or dark-colored (cold), and set the water level based o nhow large the load is. Finally, add detergent to your clothes in the washing machine and press start.</string>
+    <string name="polyester_washing_instructions">Evaluate the soil level of your clothes, and set the washer as such. Then add detergent after inserting your clothes, and select the size of your load to determine the water level. Finally, select cold for the temperature of the water, and press start.</string>
+
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+        <ImageButton
+            android:id="@+id/washing_instructions_button"
+            style="@style/LaundryInstructionsButton"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/washing_instructions_icon"
+            />
+        <ImageButton
+            android:id="@+id/drying_instructions_button"
+            style="@style/LaundryInstructionsButton"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/drying_instructions_icon"
+            />
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.NewChatWindowFragment">
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To:"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        />
+    <EditText
+        android:id="@+id/message_receiver"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:hint="Indicate who you are sending this to"
+        android:layout_alignRight="@id/to"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/texts"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:layout_below="@id/message_receiver"
+        />
+
+    <EditText
+        android:id="@+id/message_contents"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:hint="Type message here"
+        />
+
+    <ImageButton
+        android:id="@+id/sendMessageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_baseline_send_24"
+
+        />
+
+</RelativeLayout>

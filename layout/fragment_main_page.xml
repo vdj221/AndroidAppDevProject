@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".fragment.MainPageFragment">
+
+    <ImageButton
+        android:src="@mipmap/laundry_inventory_icon"
+        android:id="@+id/laundry_inventory_button"
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        style="@style/MainNavButton"
+        />
+
+<!--    <ImageButton-->
+<!--        android:src="@mipmap/chat_icon"-->
+<!--        android:id="@+id/chat_button"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        style="@style/MainNavButton"-->
+<!--        />-->
+
+    <ImageButton
+        android:src="@mipmap/current_load_icon"
+        android:id="@+id/current_load_button"
+        android:layout_below="@id/laundry_inventory_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        style="@style/MainNavButton"
+        />
+
+    <ImageButton
+        android:src="@mipmap/laundry_instructions_icon"
+        android:id="@+id/laundry_instructions_button"
+        android:layout_below="@id/laundry_inventory_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        style="@style/MainNavButton"
+        />
+
+
+</RelativeLayout>

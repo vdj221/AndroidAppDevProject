@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*"
+    >
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        >
+    <TextView
+        android:id="@+id/row_clothing_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="@style/LaundryInventoryText"
+        android:text="Name"
+        />
+
+
+    <TextView
+        android:id="@+id/row_clothing_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="@style/LaundryInventoryText"
+        android:text="Type"
+        />
+
+
+
+    <TextView
+        android:id="@+id/row_clothing_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Color"
+        style="@style/LaundryInventoryText"
+        />
+
+
+    <TextView
+        android:id="@+id/row_quote_text_material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Material"
+        style="@style/LaundryInventoryText"
+        />
+</TableRow>
+</TableLayout>

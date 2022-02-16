@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+
+    >
+    <TableRow
+        android:id="@+id/inventory_labels"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/Machine_Number_Label"
+            android:text="Number"
+            style="@style/LaundryInventoryText"
+            />
+
+        <TextView
+            android:id="@+id/Machine_Type_Label"
+            android:text="Type"
+            style="@style/LaundryInventoryText"
+            />
+
+        <TextView
+            android:id="@+id/Laundry_contents_Label"
+            android:text="Contents"
+            style="@style/LaundryInventoryText"
+            />
+
+        <TextView
+            android:id="@+id/Timer_Label"
+            android:text="Timer"
+            style="@style/LaundryInventoryText"
+            />
+
+
+    </TableRow>
+    <RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/load_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/gray"
+        />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/toggle_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_baseline_toggle_on_24"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="@color/gray"
+            />
+    </RelativeLayout>
+
+
+</TableLayout>

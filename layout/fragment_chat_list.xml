@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:stretchColumns="*"
+        >
+    <TableRow
+        android:id="@+id/inventory_labels"
+        android:layout_width="0dp">
+        <TextView
+            android:id="@+id/User_Label"
+            android:text="User"
+            style="@style/LaundryInventoryText"
+            />
+
+        <TextView
+            android:id="@+id/Date_Label"
+            android:text="Date"
+            style="@style/LaundryInventoryText"
+            />
+
+        <TextView
+            android:id="@+id/Message_Label"
+            android:text="Last Message"
+            style="@style/LaundryInventoryText"
+            />
+
+    </TableRow>
+    </TableLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/last_chats" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Chat button"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/ic_baseline_message_24"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

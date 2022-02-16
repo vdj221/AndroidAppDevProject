@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AddLoadFragment">
+
+    <EditText
+        android:id="@+id/machine_number_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insert machine number here"/>
+
+    <EditText
+        android:id="@+id/machine_type_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/machine_number_edit_text"
+        android:hint="Insert whether washer or dryer here"/>
+
+    <EditText
+        android:id="@+id/machine_timer_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/machine_type_edit_text"
+        android:hint="Insert load duration here in minutes"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/clothing_list"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/machine_timer_edit_text"
+        />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_below="@id/clothing_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:text="Create new load"
+        />
+
+</RelativeLayout>
